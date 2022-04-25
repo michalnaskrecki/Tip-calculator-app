@@ -66,7 +66,7 @@ const calculateCustom = () =>{
 
         valTip.textContent = `$${tipPer}`
         valTotal.textContent = `$${totalPer}`
-        
+
         if((isNaN(tipPer))&&(isNaN(totalPer))){
             valTip.textContent = `$0.00`
             valTotal.textContent = `$0.00`
@@ -102,5 +102,6 @@ button.addEventListener("click", () => {
     valTotal.textContent = `$0.00`
     bill.value = ""
     numPeople.value = ""
+    custom.value = ""
     tips.forEach(tip=>tip.classList.remove("checked"))
 })
